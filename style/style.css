@@ -1,0 +1,383 @@
+
+@font-face {
+  font-family: GT America Regular, sans-serif;
+  src: url(/assets/font/GT\ America\ Regular.ttf);
+}
+
+
+@media only screen and (max-width: 767px){
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  button,a,h1,h2,h3,ul,li,p{
+    font-family: GT America Regular, sans-serif;
+  }
+  li{
+    display: inline;
+    text-decoration: underline;
+    padding-right: 5px;
+  }
+
+  /*======================================HEADER*/
+
+  button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+  }
+
+  .bx-menu,.bx-x{
+    font-size: 40px;
+  }
+
+  .menu-content{
+    display: none;
+    background-color: antiquewhite;
+  }
+
+  .button-close{
+    display: none;
+    margin-right: 80px;
+  }
+
+  .button-open{
+    position: fixed;
+  }
+
+  .image-background{
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  /*==================================SOBRE MI*/
+  .about-me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .me-img{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 250px;  
+    border-radius: 20%;
+  }
+
+  .text-animated{
+    margin-top: 25px;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 10px;
+  }
+
+  .my-name{
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-role{
+    margin-top: 15px;
+    overflow: hidden;
+    border-right: 1px solid antiquewhite ;
+    white-space: nowrap;
+    font-size: 26px;
+    width: 0;
+    animation:  typing 2.5s steps(50, end) forwards,
+                blink .8s infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 98% }
+  }
+
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: black; }
+  }
+
+  .about-me-text{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  /*=================================CERTIFICADOS*/
+  .background{
+    background-color: antiquewhite;
+    margin-top: 150px;
+    border-radius: 10px;
+    
+  }
+
+  .certificates{
+    padding-top: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .certificate-img{
+    padding-top: 10px;
+    width: 70%;
+  }
+
+  /*=================================PROYECTOS*/
+  .proyects{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .demo-img{
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  .demo-link{
+    width: 130px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .bxs-chevrons-right{
+    font-size: 10px;
+  }
+
+  /*===============================FOOTER*/
+  .footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title-footer{
+    font-size: 24px;
+    color: aliceblue;
+  }
+  
+  .text-footer{
+    font-size: 16px;
+    color: aliceblue;
+  }
+
+  .pyramid-footer{
+
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+  }
+  
+  .copyright{
+    align-self: flex-end;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px){}
+
+@media only screen and (min-width: 1024px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  button,a,h1,h2,h3,ul,li,p{
+    font-family: GT America Regular, sans-serif;
+  }
+  li{
+    display: inline;
+    text-decoration: underline;
+    padding-right: 5px;
+  }
+
+  /*======================================HEADER*/
+
+  button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+  }
+
+  .bx-menu,.bx-x{
+    font-size: 40px;
+  }
+
+  .menu-content{
+    display: none;
+    background-color: antiquewhite;
+  }
+
+  .button-close{
+    display: none;
+    margin-right: 80px;
+  }
+
+  .button-open{
+    position: fixed;
+  }
+
+  .image-background{
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  /*==================================SOBRE MI*/
+  .about-me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .me-img{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 250px;  
+    border-radius: 20%;
+  }
+
+  .text-animated{
+    margin-top: 25px;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 10px;
+  }
+
+  .my-name{
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-role{
+    margin-top: 15px;
+    overflow: hidden;
+    border-right: 1px solid antiquewhite ;
+    white-space: nowrap;
+    font-size: 36px;
+    width: 0;
+    animation:  typing 2.5s steps(50, end) forwards,
+                blink .8s infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 30% }
+  }
+
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: black; }
+  }
+
+  .about-me-text{
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  /*=================================CERTIFICADOS*/
+  .background{
+    background-color: antiquewhite;
+    margin-top: 50px;
+    border-radius: 10px;
+    
+  }
+
+  .certificates{
+    padding-top: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .certificate-img{
+    padding-top: 10px;
+    width: 70%;
+  }
+
+  /*=================================PROYECTOS*/
+  .proyects{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .demo-img{
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  .demo-link{
+    width: 130px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .bxs-chevrons-right{
+    font-size: 10px;
+  }
+
+  /*===============================FOOTER*/
+  .footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title-footer{
+    font-size: 24px;
+    color: aliceblue;
+  }
+  
+  .text-footer{
+    font-size: 16px;
+    color: aliceblue;
+  }
+
+  .pyramid-footer{
+
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+  }
+  
+  .copyright{
+    align-self: flex-end;
+  }
+}
