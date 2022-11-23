@@ -91,6 +91,7 @@
   }
 
   .my-role{
+    padding: 10px;
     margin-top: 15px;
     overflow: hidden;
     border-right: 1px solid antiquewhite ;
@@ -116,6 +117,7 @@
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    padding: 10px;
   }
 
   /*=================================CERTIFICADOS*/
@@ -198,8 +200,8 @@
 
 @media only screen and (min-width: 1024px){
   *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
   }
   
   button,a,h1,h2,h3,ul,li,p{
@@ -210,7 +212,18 @@
     text-decoration: underline;
     padding-right: 5px;
   }
-
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:  url(/assets/img/mdz.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  .image-background{
+    display: none;
+  }
   /*======================================HEADER*/
 
   button{
@@ -227,12 +240,13 @@
   }
 
   .bx-menu,.bx-x{
-    font-size: 40px;
+    font-size: 80px;
   }
 
   .menu-content{
     display: none;
     background-color: antiquewhite;
+    padding: 10px;
   }
 
   .button-close{
@@ -244,20 +258,12 @@
     position: fixed;
   }
 
-  .image-background{
-    position: absolute;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-
   /*==================================SOBRE MI*/
   .about-me{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 70%;
   }
   .me-img{
     margin-top: 50px;
@@ -279,6 +285,7 @@
   }
 
   .my-role{
+    padding: 10px;
     margin-top: 15px;
     overflow: hidden;
     border-right: 1px solid antiquewhite ;
@@ -291,7 +298,7 @@
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 21% }
+    to { width: 30% }
   }
 
   @keyframes blink {
@@ -305,6 +312,7 @@
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    padding: 10px;
   }
 
   /*=================================CERTIFICADOS*/
@@ -312,7 +320,7 @@
     background-color: antiquewhite;
     margin-top: 50px;
     border-radius: 10px;
-    
+    width: 70%;
   }
 
   .certificates{
