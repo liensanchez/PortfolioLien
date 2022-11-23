@@ -405,7 +405,7 @@
   }
   /*======================================HEADER*/
 
-  button{
+/*   button{
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -423,7 +423,7 @@
   }
 
   .menu-content{
-/*     display: none; */
+     display: none; 
     background-color: antiquewhite;
     padding-right: 20px;
   }
@@ -435,21 +435,22 @@
 
   .button-open{
     position: fixed;
-  }
+  } */
 
   /*==================================SOBRE MI*/
   .about-me{
+    margin-top: 50px;
     display: flex;
+    width: 70%;
   }
   .me-img{
     margin-top: 50px;
     margin-bottom: 30px;
-    width: 30%;
+    width: 90%;
     border-radius: 20%;
   }
 
   .text-animated{
-    width: 50%;
     margin-top: 50px;
     display: inline-block;
     background-color: antiquewhite;
@@ -469,8 +470,6 @@
     font-size: 36px;
     width: 0;
   }
-
-
 
   .about-me-text{
     text-align: justify;
