@@ -26,11 +26,11 @@
     text-decoration: underline;
     padding-right: 5px;
   }
-  body{
+/*   body{
     background-image: url(/assets/img/mdz.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
+  } */
   /*======================================HEADER*/
 
    button{
@@ -203,11 +203,11 @@
     text-decoration: underline;
     padding-right: 5px;
   }
-  body{
+/*   body{
     background-image: url(/assets/img/mdz.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
+  } */
   /*======================================HEADER*/
 
   button{
@@ -398,14 +398,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image:  url(/assets/img/mdz.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
+
   }
   /*======================================HEADER*/
 
-/*   button{
+   button{
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -415,15 +412,14 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: antiquewhite;
+    background-color: transparent;
   }
 
   .bx-menu,.bx-x{
-    font-size: 80px;
+    display: none;
   }
 
   .menu-content{
-     display: none; 
     background-color: antiquewhite;
     padding-right: 20px;
   }
@@ -434,8 +430,8 @@
   }
 
   .button-open{
-    position: fixed;
-  } */
+    display: none;
+  } 
 
   /*==================================SOBRE MI*/
   .about-me{
