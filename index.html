@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/img/pyramid.png" type="image/x-icon">
   <link rel="stylesheet" href="./style/style.css">
+  <script src="/node_modules/typed.js/lib/typed.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <title>Lien Sanchez</title>
 </head>
@@ -28,12 +29,6 @@
 
     </div>
 
-   <div class="image-background">
-
-      <img src="./assets/img/mdz.jpg" alt="">
-
-    </div> 
-
   </header>
 
   <main class="main">    
@@ -48,9 +43,23 @@
 
       <article class="text-animated">
 
-        <h2 class="my-name">Lien</h2>
+        <h2 class="my-name">Lien Sanchez</h2>
 
-        <h2 class="my-role">FrontEnd Developer Jr.</h2>
+        <div class="typed">
+          <h2 class="my-role"><span class="anim"></span> </h2>         
+        </div>
+        <script>
+          let typed = new Typed ('.anim', {
+          strings: ['', 'FullStack Student', 'Front End Developer JR'],
+          typeSpeed: 100,
+          backSpeed: 100,
+          loop: true
+          
+        })
+    
+         /* <h2 class="my-role">FrontEnd Developer Jr.</h2> */
+    
+        </script>
 
         <p class="about-me-text">Tengo 22 años, actualmente estudio desarrollador full-stack en <a href="https://www.soyhenry.com/webfullstack">soyHenry</a>. Soy una persona amigable, entusiasta, proactiva y curiosa que siempre está tratando de aprender cosas nuevas, nuevos desafíos crecer poco a poco todos los días. Estoy buscando un puesto de entrada para usar mis habilidades en codificación, resolución de problemas complejos y asistencia en proyectos. Mi<a download="" href="/assets/certificates/Sanchez Front End.pdf"> Curriculum </a></p>
 

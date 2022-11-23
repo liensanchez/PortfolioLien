@@ -8,28 +8,38 @@
 @media only screen and (max-width: 767px){
 
   *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
   }
   
   button,a,h1,h2,h3,ul,li,p{
     font-family: GT America Regular, sans-serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
   }
   li{
     display: inline;
     text-decoration: underline;
     padding-right: 5px;
   }
-
+  body{
+    background-image: url(/assets/img/mdz.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   /*======================================HEADER*/
 
-  button{
+   button{
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
-  }
+  } 
 
-  .menu{
+   .menu{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -46,35 +56,23 @@
   }
 
   .button-close{
-    display: none;
-    margin-right: 80px;
+    display: flex;
   }
 
   .button-open{
     position: fixed;
-  }
-
-  .image-background{
-    position: absolute;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  } 
 
 
   /*==================================SOBRE MI*/
-  .about-me{
+  .card{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 1px;
-    margin-right: 1px;
+    justify-content: space-evenly;
   }
   .me-img{
     margin-top: 50px;
     margin-bottom: 30px;
-    width: 250px;  
+    width: 40%;  
     border-radius: 20%;
   }
 
@@ -83,6 +81,7 @@
     display: inline-block;
     background-color: antiquewhite;
     border-radius: 10px;
+    width: 100%;
   }
 
   .my-name{
@@ -93,23 +92,10 @@
   .my-role{
     padding: 10px;
     margin-top: 15px;
-    overflow: hidden;
     border-right: 1px solid antiquewhite ;
     white-space: nowrap;
     font-size: 26px;
     width: 0;
-    animation:  typing 2.5s steps(50, end) forwards,
-                blink .8s infinite;
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 98% }
-  }
-
-  @keyframes blink {
-    from { border-color: transparent }
-    to { border-color: black; }
   }
 
   .about-me-text{
@@ -125,7 +111,7 @@
     background-color: antiquewhite;
     margin-top: 150px;
     border-radius: 10px;
-    
+    width: 100%;
   }
 
   .certificates{
@@ -169,6 +155,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
   }
 
   .title-footer{
@@ -205,19 +192,22 @@
   button,a,h1,h2,h3,ul,li,p{
     font-family: GT America Regular, sans-serif;
   }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
   li{
     display: inline;
     text-decoration: underline;
     padding-right: 5px;
   }
-  .image-background{
-    position: absolute;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  body{
+    background-image: url(/assets/img/mdz.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-
   /*======================================HEADER*/
 
   button{
@@ -393,6 +383,12 @@
   button,a,h1,h2,h3,ul,li,p{
     font-family: GT America Regular, sans-serif;
   }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
   li{
     display: inline;
     text-decoration: underline;
@@ -406,9 +402,6 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-  }
-  .image-background{
-    display: none;
   }
   /*======================================HEADER*/
 
@@ -430,7 +423,7 @@
   }
 
   .menu-content{
-    display: none;
+/*     display: none; */
     background-color: antiquewhite;
     padding-right: 20px;
   }
@@ -447,19 +440,17 @@
   /*==================================SOBRE MI*/
   .about-me{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 70%;
   }
   .me-img{
     margin-top: 50px;
     margin-bottom: 30px;
-    width: 250px;  
+    width: 30%;
     border-radius: 20%;
   }
 
   .text-animated{
-    margin-top: 25px;
+    width: 50%;
+    margin-top: 50px;
     display: inline-block;
     background-color: antiquewhite;
     border-radius: 10px;
@@ -473,24 +464,13 @@
   .my-role{
     padding: 10px;
     margin-top: 15px;
-    overflow: hidden;
     border-right: 1px solid antiquewhite ;
     white-space: nowrap;
     font-size: 36px;
     width: 0;
-    animation:  typing 2.5s steps(50, end) forwards,
-                blink .8s infinite;
   }
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 30% }
-  }
 
-  @keyframes blink {
-    from { border-color: transparent }
-    to { border-color: black; }
-  }
 
   .about-me-text{
     text-align: justify;
