@@ -415,12 +415,16 @@
     background-color: transparent;
   }
 
+  .button-item{
+    font-size: 20px;
+    color: black;
+  }
   .bx-menu,.bx-x{
     display: none;
   }
 
   .menu-content{
-    background-color: antiquewhite;
+    background-color: transparent;
     padding-right: 20px;
   }
 
@@ -518,6 +522,21 @@
   .bxs-chevrons-right{
     font-size: 10px;
   }
+
+/*   .scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: antiquewhite;
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    transition: .4s;
+  }
+  .scrollup__icon{
+    font-size: 1.5rem;
+    color: #FFF;
+  } */
 
   /*===============================FOOTER*/
   .footer{
