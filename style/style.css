@@ -291,7 +291,7 @@
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 30% }
+    to { width: 21% }
   }
 
   @keyframes blink {
@@ -324,7 +324,7 @@
   }
   .certificate-img{
     padding-top: 10px;
-    width: 70%;
+    width: 40%;
   }
 
   /*=================================PROYECTOS*/
@@ -336,7 +336,7 @@
   }
 
   .demo-img{
-    width: 70%;
+    width: 40%;
     margin-bottom: 10px;
   }
   .demo-link{
