@@ -36,7 +36,7 @@ function NavBar() {
   
 
   return (
-    <div className='flex flex-row justify-between m-8'>
+    <div className='flex flex-row justify-between m-4 bg-red-500'>
 
       <div >
         <img src={logo} alt="" />
@@ -46,7 +46,7 @@ function NavBar() {
           <div className='flex flex-row p-1'>
             {menu ? '' : <HiMenu onClick={OpenMenu}/>}
             {menu ? <HiX onClick={CloseMenu}/> : ''}
-            <div className='flex flex-col bg-gray-50 bg-opacity-20 h-screen'>              
+            <div className='flex flex-col backdrop-blur-md'>              
               {menu && <h3 className='p-2'>Projects</h3>}
               {menu && <h3 className='p-2'>Skills</h3>}
               {menu && <h3 className='p-2'>About Me</h3>}
