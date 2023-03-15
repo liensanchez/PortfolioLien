@@ -1,3 +1,6 @@
 body {
-  background-image: url(./assets/img/mdz.jpg);
+  background-image: url(./assets/img/mountain.png), url(./assets/img/no-mountain.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
 }
+
