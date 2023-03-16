@@ -2,7 +2,10 @@ import React from 'react'
 
 function Presentation() {
   return (
-    <div>Presentation</div>
+    <>
+      <h1>Lien Sanchez</h1>
+      <h3>Full Stack Developer</h3>
+    </>
   )
 }
 
