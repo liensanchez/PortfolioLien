@@ -30,9 +30,9 @@ function App() {
     <div className='flex flex-col h-screen '>
       <NavBar props={isMobile} />
       <Presentation props={isMobile}/>
-      <Projects props={isMobile}/>
-      <Skills props={isMobile}/>
       <AboutMe props={isMobile}/>
+      <Projects props={isMobile}/>
+{/*       <Skills props={isMobile}/>  */}
       <Contact props={isMobile}/>
       <Footer props={isMobile}/> 
     </div>    

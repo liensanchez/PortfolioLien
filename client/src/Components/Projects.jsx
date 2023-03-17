@@ -15,7 +15,8 @@ function Projects(isMobile) {
   return (
     <>
       {mobileCheck ? 
-
+      <>
+      <div id='projects'></div>
       <div className='flex flex-col items-center'>
 
         <div className='flex flex-col items-center'>
@@ -52,6 +53,7 @@ function Projects(isMobile) {
         </div>
 
       </div>
+      </>
 
       : 
       

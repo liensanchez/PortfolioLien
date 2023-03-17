@@ -19,7 +19,9 @@ function Skills(isMobile) {
     <>
     
     {mobileCheck ? 
-      <div className='flex flex-col items-center'>
+      <>
+      <div id='skills'></div>
+      <div className='flex'>
         <h3>Skills</h3>
         <img src={jsimg} alt="" />
         <p>Javascript</p>
@@ -40,6 +42,7 @@ function Skills(isMobile) {
         <img src={socketimg} alt="" />
         <p>Socket.io</p>
       </div>
+      </>
 
       :
       <h2>Pc</h2>

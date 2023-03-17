@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {HiMenu} from 'react-icons/hi'
 import {HiX} from 'react-icons/hi'
 import logo from '../assets/pyramid.png'
-import { motion } from "framer-motion"
 
 
 function NavBar(isMobile) {
@@ -21,23 +20,22 @@ function NavBar(isMobile) {
  
 
   return (
-     <div className='flex flex-row justify-between m-4 '>
+     <div className='flex flex-row justify-between fixed bg-slate-500 w-screen p-2'>
 
       <div >
         <img src={logo} alt="" />
       </div>
 
       {mobileCheck ? 
-          <div className='flex flex-row p-1'>
+          <div className='flex flex-row' >
             {menu ? '' : <HiMenu onClick={OpenMenu}/>}
-            {menu ? <HiX onClick={CloseMenu}/> : ''}
-            {menu && <div className='flex flex-col backdrop-blur-md h-screen'>
-                <h3 className='p-3'>Projects</h3>
-                <h3 className='p-3'>Skills</h3>
-                <h3 className='p-3'>About Me</h3>
-                <h3 className='p-3'>Contact</h3> 
+            {menu && <div className='flex flex-col items-center p-10' >
+                <a href='#aboutme' className='p-3' onClick={CloseMenu}>About Me</a>
+                <a href='#projects' className='p-3' onClick={CloseMenu}>Projects</a>
+                <a href='#skills' className='p-3' onClick={CloseMenu}>Skills</a>
+                <a href='#contact' className='p-3' onClick={CloseMenu}>Contact</a> 
               </div>}              
-
+            {menu ? <HiX onClick={CloseMenu}/> : ''}
           </div> 
     
         :
