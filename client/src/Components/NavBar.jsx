@@ -2,26 +2,12 @@ import React, { useEffect, useState } from 'react'
 import {HiMenu} from 'react-icons/hi'
 import {HiX} from 'react-icons/hi'
 import logo from '../assets/pyramid.png'
+import { motion } from "framer-motion"
 
-function NavBar() {
 
-  const [isMobile, setIsMobile] = useState(false)
+function NavBar(isMobile) {
 
-  useEffect(() => {
-    const mobileQuery = window.matchMedia("(max-width: 1024px)");
-    setIsMobile(mobileQuery.matches);
-
-    const handleMobileCheck = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    mobileQuery.addListener(handleMobileCheck);
-
-    return () => {
-      mobileQuery.removeListener(handleMobileCheck);
-    };
-  }, [])
-
+  let mobileCheck = isMobile.props
 
   const [menu, setMenu] = useState(false)
 
@@ -32,17 +18,16 @@ function NavBar() {
   const CloseMenu = () => {
     setMenu(false)
   }
-
-  
+ 
 
   return (
-    <div className='flex flex-row justify-between m-4'>
+     <div className='flex flex-row justify-between m-4 '>
 
       <div >
         <img src={logo} alt="" />
       </div>
 
-      {isMobile ? 
+      {mobileCheck ? 
           <div className='flex flex-row p-1'>
             {menu ? '' : <HiMenu onClick={OpenMenu}/>}
             {menu ? <HiX onClick={CloseMenu}/> : ''}
@@ -53,7 +38,7 @@ function NavBar() {
                 <h3 className='p-3'>Contact</h3> 
               </div>}              
 
-          </div>
+          </div> 
     
         :
 
@@ -66,7 +51,7 @@ function NavBar() {
       }
 
 
-    </div>
+    </div> 
   )
 }
 
