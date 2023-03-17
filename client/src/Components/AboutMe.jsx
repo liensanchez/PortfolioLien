@@ -1,8 +1,16 @@
 import React from 'react'
 
-function AboutMe() {
+function AboutMe(isMobile) {
+
+  let mobileCheck = isMobile.props
+
   return (
-    <div>AboutMe</div>
+    <>
+    {mobileCheck ? 
+        <div>AboutMe</div>
+      : <h2>PC</h2> }
+    </>
+
   )
 }
 

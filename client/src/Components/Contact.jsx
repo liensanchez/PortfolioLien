@@ -1,8 +1,16 @@
 import React from 'react'
 
-function Contact() {
+function Contact(isMobile) {
+
+  let mobileCheck = isMobile.props
+
   return (
-    <div>Contact</div>
+    <>
+    {mobileCheck ? 
+        <div>Contact</div>
+    : <h2>PC</h2> }    
+    </>
+
   )
 }
 
