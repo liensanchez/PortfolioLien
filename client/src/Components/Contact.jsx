@@ -9,7 +9,7 @@ function Contact(isMobile) {
     {mobileCheck ? 
       <>
       <div id='contact'></div>
-      <div>
+      <div className='my-10'>
         <h2>Contact Me</h2>
         <p>Via mail:</p>
         <p>liensilviosanchez@gmail.com</p>
