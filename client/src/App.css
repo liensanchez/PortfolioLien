@@ -6,7 +6,14 @@
 
  */
 
- body {
-    background-image: url(./assets/img/mountain.png), url(./assets/img/no-mountain.png);
-    background-repeat: no-repeat;
- }
+#presentation {
+  background-image: url(./assets/img/mountain.png);
+  background-repeat: no-repeat;
+  position: absolute;
+} 
+
+#onTopPresentation{
+  border: solid 1px black;
+  background-image: url(./assets/img/no-mountain.png);
+  background-repeat: no-repeat;
+}
