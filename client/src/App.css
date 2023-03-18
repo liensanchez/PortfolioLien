@@ -7,5 +7,6 @@
  */
 
  body {
-    background-image: url(./assets/img/mountain.png)
+    background-image: url(./assets/img/mountain.png), url(./assets/img/no-mountain.png);
+    background-repeat: no-repeat;
  }
