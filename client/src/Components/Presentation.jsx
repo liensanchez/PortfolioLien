@@ -22,7 +22,7 @@ function Presentation(isMobile) {
     <>
     {mobileCheck ? 
       <>     
-      <div className='flex flex-col bg-blue-400 mt-10'> 
+      <div className='flex flex-col mt-10'> 
         <div className='flex flex-col items-center mt-4'>
           <h1>Lien Sanchez</h1>
           <h2>Full Stack Developer con:</h2>
@@ -43,7 +43,7 @@ function Presentation(isMobile) {
               {technology}
             </motion.h2>
           ))}
-          <img src={Lien} alt="" className='z-10 '/>
+          <img src={Lien} alt="" className='z-10'/>
         </div>
       </div>
       </>

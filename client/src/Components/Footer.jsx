@@ -8,7 +8,7 @@ function Footer(isMobile) {
     <>
     {mobileCheck ? 
       <div
-        className='h-10 bg-blue-500'>Footer</div>
+        className='h-10'>Footer</div>
     : <h2>PC</h2> }      
     </>
 
