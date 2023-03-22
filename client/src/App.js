@@ -6,6 +6,7 @@ import AboutMe from './Components/AboutMe';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer'; 
 import { useEffect, useState } from 'react';
+import './App.css'
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
       <Presentation props={isMobile}/>
       <AboutMe props={isMobile}/>
       <Projects props={isMobile}/>
-{/*       <Skills props={isMobile}/>   */}
+      <Skills props={isMobile}/>
       <Contact props={isMobile}/>
       <Footer props={isMobile}/>  
     </div>    

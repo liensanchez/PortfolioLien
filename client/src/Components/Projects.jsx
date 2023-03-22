@@ -17,7 +17,7 @@ function Projects(isMobile) {
       {mobileCheck ? 
       <>
       <div id='projects'></div>
-      <div className='flex flex-col items-center my-10'>
+      <div className='flex flex-col items-center p-2 m-5 bg-slate-500 rounded-lg'>
 
         <div className='flex flex-col items-center'>
           <h3>Project Dogs</h3>
