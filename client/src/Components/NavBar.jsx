@@ -20,7 +20,7 @@ function NavBar(isMobile) {
  
 
   return (
-     <div className='fixed flex flex-row justify-between z-50 w-screen p-2'>
+     <div className='fixed flex flex-row justify-between z-50 w-screen p-2 golden'>
 
       <div >
         <img src={logo} alt="" />

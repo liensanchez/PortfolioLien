@@ -1,1 +1,18 @@
-
+.darkBlue {
+  background-color: #164675;
+}
+.blue{
+  background-color: #007CA4
+}
+.lightBlue{
+  background-color: #0BB0D8;
+}
+.golden{
+  background-color: #F0A549;
+}
+.yellow{
+  background-color: #FFCE3E;
+}
+body{
+  background-color: #909090
+}

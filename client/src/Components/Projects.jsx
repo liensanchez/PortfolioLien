@@ -15,44 +15,74 @@ function Projects(isMobile) {
 
   const [dogImg, setDogImg] = useState(dogsIndex)
 
+  const dogImages = [ dogsIndex, dogstHome, dogsDetail]
+
+  const [currentDogIndex, setCurrentDogIndex] = useState(0);
+
+  const nextImgDog = () => {
+    setCurrentDogIndex((currentDogIndex + 1) % dogImages.length);
+  }
+
+  const prevImgDog = () => {
+    setCurrentDogIndex((currentDogIndex - 1 + dogImages.length) % dogImages.length);
+  }
+
+
   const [voyImg, setVoyImg] = useState(henryIndex)
+
+  const voyImages = [henryIndex, henryStore, henryPlan, henryChat]
+
+  const [currentVoyIndex, setCurrentVoyIndex] = useState(0);
+
+  const nextImgVoy = () => {
+    setCurrentVoyIndex((currentVoyIndex + 1) % voyImages.length);
+  }
+
+  const prevImgVoy = () => {
+    setCurrentVoyIndex((currentVoyIndex - 1 + voyImages.length) % voyImages.length);
+  }
 
   return (
     <>
       {mobileCheck ? 
       <>
       <div id='projects'></div>
-      <div className='flex flex-col items-center p-2 m-5 rounded-lg'>
-
-        <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center p-2 m-5 rounded-lg lightBlue'>
+        <div className='flex flex-col items-center overflow-hidden'>
           <h3>Project Dogs</h3>
-          <div className=''>
-            <div className='flex justify-around'>
-              <button
-                className='bg-blue-400 rounded'
-                onClick={() => setDogImg(dogsIndex)}
-              >Index</button>
-              <button
-                className='bg-blue-400 rounded'
-                onClick={() => setDogImg(dogstHome)}
-              >Home</button>
-              <button
-                className='bg-blue-400 rounded'
-                onClick={() => setDogImg(dogsDetail)}
-              >Detail</button>
-            </div>
-
-            <img src={dogImg} alt="index" />
+          <div className='overflow-hidden'>
+            <img src={dogImages[currentDogIndex]} alt="index" className='py-1'/>
+              <div className='flex justify-around'>
+                <button
+                  onClick={() => prevImgDog()}
+                  className='w-1/2 yellow'>Prev</button>
+                <button
+                  onClick={() => nextImgDog() }
+                  className='w-1/2 yellow'>Next</button>
+              </div>
           </div>
-          <a href="https://github.com/liensanchez/Project-Dogs-deploy">Repository</a>
-          <a href="https://project-dogs-deploy.vercel.app/">Deploy</a>
-          <p>Javascript</p>
-          <p>React</p>
-          <p>Redux</p>
-          <p>Sequelize</p>
-          <p>Express</p> 
 
-          <h3>VoyHenry!</h3>
+          <h3>Voy Henry!</h3>
+          <div className='overflow-hidden'>
+            <img src={voyImages[currentVoyIndex]} alt="index" className='py-1'/>
+              <div className='flex justify-around'>
+                <button
+                  onClick={() => prevImgVoy()}
+                  className='w-1/2 yellow'>Prev</button>
+                <button
+                  onClick={() => nextImgVoy() }
+                  className='w-1/2 yellow'>Next</button>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      </>
+
+      : 
+      <>
+      <h1>PC</h1>
+      <h3>VoyHenry!</h3>
           <div className=''>
               <div className='flex justify-around'>
                 <button
@@ -73,49 +103,38 @@ function Projects(isMobile) {
                 >Chat</button>
               </div>
             <img src={voyImg} alt="index" className='py-1'/>
+            <a href="https://github.com/Gbw699/PF-VoyHenry">Repository</a>
+            <a href="https://pf-voy-henry.vercel.app/">Deploy</a>
+            <p>Javascript</p>
+            <p>React</p>
+            <p>Redux</p>
+            <p>Sequelize</p>
+            <p>Express</p> 
+            <p>Passport</p>
+            <p>Mailer</p>
+            <p>MercadoPago</p>
+            <p>Socket.io</p>
           </div> 
-        </div>
-{/*   <div className='flex flex-col items-center'>
-          <h3>Voy Henry</h3>
-          <div className='bg-white'>
-            <div className='flex justify-between'>
+
+      <h3>Project Dogs</h3>
+          <div className=''>
+            <div className='flex justify-around'>
               <button
-                onClick={() => setDogImg(henryIndex)}
+                className='bg-blue-400 rounded'
+                onClick={() => setDogImg(dogsIndex)}
               >Index</button>
               <button
-                onClick={() => setDogImg(henryStore)}
-              >Store</button>
+                className='bg-blue-400 rounded'
+                onClick={() => setDogImg(dogstHome)}
+              >Home</button>
               <button
-                onClick={() => setDogImg(henryPlan)}
-              >Plans</button>
-              <button
-                onClick={() => setDogImg(henryChat)}
-              >Chat</button>
-              <img src={voyImg} alt="index" />
-            </div>
-          </div> 
-          <img src={henryIndex} alt="index" />
-          <img src={henryStore} alt="home" />
-          <img src={henryPlan} alt="detail" />
-          <img src={henryChat} alt="detail" />
-          <a href="https://github.com/Gbw699/PF-VoyHenry">Repository</a>
-          <a href="https://pf-voy-henry.vercel.app/">Deploy</a>
-          <p>Javascript</p>
-          <p>React</p>
-          <p>Redux</p>
-          <p>Sequelize</p>
-          <p>Express</p> 
-          <p>Passport</p>
-          <p>Mailer</p>
-          <p>MercadoPago</p>
-          <p>Socket.io</p>
-        </div> */}
-      </div>
+                className='bg-blue-400 rounded'
+                onClick={() => setDogImg(dogsDetail)}
+              >Detail</button>
+            </div>   
+            <img src={dogImg} alt="index" />
+          </div>  
       </>
-
-      : 
-      
-      <h1>PC</h1>
       }
     </>
 
@@ -124,3 +143,16 @@ function Projects(isMobile) {
 }
 
 export default Projects
+{/*           {dogImages.slice(0, index + 1).map((imageDog, index) => (
+            <motion.div 
+            initial={{x: -800}}
+            animate={{x: 800,
+                      scale: 1}}
+            transition={{ ease: "easeOut",
+                          duration: 10,
+                          repeat: Infinity  }}
+            className='absolute overflow-hidden'
+            key={index}>
+              {imageDog}
+            </motion.div>
+          ))} */}

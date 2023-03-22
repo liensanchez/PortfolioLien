@@ -1,13 +1,35 @@
 import React, { useEffect, useState } from 'react'
 import Lien from '../assets/img/LienOpenHead.png'
 import {motion} from 'framer-motion'
+import '../App.css'
+import jsimg from '../assets/img/logos/js.png'
+import reactimg from '../assets/img/logos/react.png'
+import reduximg from '../assets/img/logos/redux.png'
+import sequelizeimg from '../assets/img/logos/sequelize.png'
+import nodeimg from '../assets/img/logos/node.png'
+import passportimg from '../assets/img/logos/passport.png'
+import nodemailerimg from '../assets/img/logos/nodemailer.png'
+import mercadopagoimg from '../assets/img/logos/mercadopago.png'
+import socketimg from '../assets/img/logos/socket.png'
+
 
 function Presentation(isMobile) {
 
   let mobileCheck = isMobile.props
 
-  const [index, setIndex] = useState(0);
-  const technologies = ['Javascript', 'React', 'Node.js', 'Redux', 'Sequelize', 'SQL', 'CSS', 'Tailwind', 'GO'];
+  const [index, setIndex] = useState(0)
+
+  const technologies = [<img src={jsimg} className='h-10 w-10' alt=''/>,
+                        <img src={reactimg} className='h-10 w-10' alt=''/>,
+                        <img src={reduximg} className='h-10 w-10' alt=''/>,
+                        <img src={sequelizeimg} className='h-10 w-10' alt=''/>,
+                        <img src={nodeimg} className='h-10 w-10' alt=''/>,
+                        <img src={passportimg} className='h-10 w-10' alt=''/>,
+                        <img src={nodemailerimg} className='h-10 w-10' alt=''/>,
+                        <img src={mercadopagoimg} className='h-10 w-10' alt=''/>,
+                        <img src={socketimg} className='h-10 w-10' alt=''/>]
+
+  
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -29,7 +51,7 @@ function Presentation(isMobile) {
         </div> 
         <div className='flex flex-col items-center'>
           {technologies.slice(0, index + 1).map((technology, index) => (
-            <motion.h2 
+            <motion.div 
             initial={{x: 0}}
             animate={{x: 0,
                       rotate:90,
@@ -41,7 +63,7 @@ function Presentation(isMobile) {
             className='absolute'
             key={index}>
               {technology}
-            </motion.h2>
+            </motion.div>
           ))}
           <img src={Lien} alt="" className='z-10'/>
         </div>

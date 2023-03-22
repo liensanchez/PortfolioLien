@@ -33,7 +33,7 @@ function App() {
       <Presentation props={isMobile}/>
       <AboutMe props={isMobile}/>
       <Projects props={isMobile}/>
-{/*       <Skills props={isMobile}/> */}
+      <Skills props={isMobile}/>
       <Contact props={isMobile}/>
       <Footer props={isMobile}/>  
     </div>    
