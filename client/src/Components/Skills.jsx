@@ -21,7 +21,7 @@ function Skills(isMobile) {
     {mobileCheck ? 
       <>
       <div id='skills'></div>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center lightBlue p-2 m-5 rounded-lg'>
         <h3>Skills</h3>
         <div className='flex flex-wrap justify-center'>
           <div className='flex flex-col items-center p-3'>

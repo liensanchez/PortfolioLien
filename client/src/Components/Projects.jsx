@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import {motion} from 'framer-motion'
 import dogsIndex from '../assets/img/dogsIndex.jpeg'
 import dogstHome from '../assets/img/dogsHome.jpeg'
 import dogsDetail from '../assets/img/dogsDetail.jpeg'
@@ -46,7 +45,7 @@ function Projects(isMobile) {
     <>
       {mobileCheck ? 
       <>
-      <div id='projects'></div>
+      <div id='projects' className=' my-5'></div>
       <div className='flex flex-col items-center p-2 m-5 rounded-lg lightBlue'>
         <div className='flex flex-col items-center overflow-hidden'>
           <h3>Project Dogs</h3>
@@ -143,16 +142,3 @@ function Projects(isMobile) {
 }
 
 export default Projects
-{/*           {dogImages.slice(0, index + 1).map((imageDog, index) => (
-            <motion.div 
-            initial={{x: -800}}
-            animate={{x: 800,
-                      scale: 1}}
-            transition={{ ease: "easeOut",
-                          duration: 10,
-                          repeat: Infinity  }}
-            className='absolute overflow-hidden'
-            key={index}>
-              {imageDog}
-            </motion.div>
-          ))} */}
