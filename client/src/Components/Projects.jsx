@@ -16,7 +16,6 @@ function Projects(isMobile) {
 
   let mobileCheck = isMobile.props
 
-  const [dogImg, setDogImg] = useState(dogsIndex)
 
   const dogImages = [ dogsIndex, dogstHome, dogsDetail]
 
@@ -30,8 +29,6 @@ function Projects(isMobile) {
     setCurrentDogIndex((currentDogIndex - 1 + dogImages.length) % dogImages.length);
   }
 
-
-  const [voyImg, setVoyImg] = useState(henryIndex)
 
   const voyImages = [henryIndex, henryStore, henryPlan, henryChat]
 
@@ -54,7 +51,7 @@ function Projects(isMobile) {
         <div className='flex flex-col items-center overflow-hidden'>
           <h3 className='font-mono text-2xl font-bold py-2'>Voy Henry!</h3>
           <div className='overflow-hidden'>
-            <img src={voyImages[currentVoyIndex]} alt="index" className='py-1'/>
+            <img src={voyImages[currentVoyIndex]} alt="index"/>
               <div className='flex justify-around'>
                 <button
                   onClick={() => prevImgVoy()}
@@ -130,64 +127,97 @@ function Projects(isMobile) {
           </div>
         </div>
       </div>
-
       </>
 
       : 
       <>
-      <h1>PC</h1>
-      <h3>VoyHenry!</h3>
-          <div className=''>
-              <div className='flex justify-around'>
-                <button
-                  className='border-black border-solid border-2 rounded p-1'
-                  onClick={() => setVoyImg(henryIndex)}
-                >Index</button>
-                <button
-                  className='border-black border-solid border-2 rounded p-1'
-                  onClick={() => setVoyImg(henryStore)}
-                >Store</button>
-                <button
-                  className='border-black border-solid border-2 rounded p-1'
-                  onClick={() => setVoyImg(henryPlan)}
-                >Plans</button>
-                <button
-                  className='border-black border-solid border-2 rounded p-1'
-                  onClick={() => setVoyImg(henryChat)}
-                >Chat</button>
-              </div>
-            <img src={voyImg} alt="index" className='py-1'/>
-            <a href="https://github.com/Gbw699/PF-VoyHenry">Repository</a>
-            <a href="https://pf-voy-henry.vercel.app/">Deploy</a>
-            <p>Javascript</p>
-            <p>React</p>
-            <p>Redux</p>
-            <p>Sequelize</p>
-            <p>Express</p> 
-            <p>Passport</p>
-            <p>Mailer</p>
-            <p>MercadoPago</p>
-            <p>Socket.io</p>
-          </div> 
+      <div id='projects' className=' my-5'></div>
+      <div className='flex flex-wrap p-2 m-5 rounded-lg lightBlue'>
+        <div className='flex flex-wrap justify-around overflow-hidden'>
 
-      <h3>Project Dogs</h3>
-          <div className=''>
-            <div className='flex justify-around'>
-              <button
-                className='bg-blue-400 rounded'
-                onClick={() => setDogImg(dogsIndex)}
-              >Index</button>
-              <button
-                className='bg-blue-400 rounded'
-                onClick={() => setDogImg(dogstHome)}
-              >Home</button>
-              <button
-                className='bg-blue-400 rounded'
-                onClick={() => setDogImg(dogsDetail)}
-              >Detail</button>
-            </div>   
-            <img src={dogImg} alt="index" />
-          </div>  
+          <div className='w-5/12 flex flex-col items-center'>
+            <h3 className='font-mono text-2xl font-bold py-2'>Voy Henry!</h3>
+            <div className='overflow-hidden'>
+              <img src={voyImages[currentVoyIndex]} alt="index" className='py-1'/>
+                <div className='flex justify-around'>
+                  <button
+                    onClick={() => prevImgVoy()}
+                    className='w-1/2 yellow'>Prev</button>
+                  <button
+                    onClick={() => nextImgVoy() }
+                    className='w-1/2 yellow'>Next</button>
+                </div>
+            </div>
+            <div className='flex flex-col items-center'>
+              <h2 className='font-mono text-lg font-bold py-4'>Back-End Developer (Back-End Lead)</h2>
+              <ul className='p-2'>
+                <li>Managed a team of 3 developers and led calls to ensure project success.</li>
+                <li>Developed query and params filters, CRUD operations, and eCommerce functionalities to enhance the user experience.</li>
+                <li>Built a real-time chat feature using the latest technologies to enable seamless communication between users.</li>
+                <li>Designed and implemented models and databases with Sequelize to efficiently store and retrieve data.</li>
+                <li>Collaborated with front-end developers to ensure the back-end and front-end functionalities were seamlessly integrated.</li>
+                <li>Participated in code reviews and testing to ensure high-quality code was delivered to clients.</li>
+              </ul>
+              <div className='flex justify-center flex-wrap p-2'> 
+                <div className='flex flex-col items-center p-5'>
+                  <a href="https://github.com/Gbw699/PF-VoyHenry">
+                    <img src={github} alt="" className='h-20 w-25'/>
+                  </a>
+                  <a href="https://github.com/Gbw699/PF-VoyHenry">Repository</a>
+                </div>
+                <div className='flex flex-col items-center p-5'>
+                  <a href="https://pf-voy-henry.vercel.app/">
+                    <img src={voyHenryLogo} alt="" className='h-20 w-25'/>
+                  </a>
+                  <a href="https://pf-voy-henry.vercel.app/">Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='w-5/12 flex flex-col items-center'>
+            <h3 className='font-mono text-2xl font-bold py-2'>Project Dogs</h3>
+            <div className='overflow-hidden'>
+              <img src={dogImages[currentVoyIndex]} alt="index" className='py-2'/>
+                <div className='flex justify-around'>
+                  <button
+                    onClick={() => prevImgVoy()}
+                    className='w-1/2 yellow'>Prev</button>
+                  <button
+                    onClick={() => nextImgVoy() }
+                    className='w-1/2 yellow'>Next</button>
+                </div>
+            </div>
+            <div className='flex flex-col items-center'>
+              <h2 className='font-mono text-lg font-bold py-4'>Full-Stack Solo Project </h2>
+              <ul className='py-5'>
+                <li>Developed query and params filters to enable efficient search and filtering of data.</li>
+                <li>Designed and implemented models and databases using Sequelize to store and retrieve data.</li>
+                <li>Built the front-end of the application using React, Redux, and CSS to create a user-friendly interface.</li>
+                <li>Developed the back-end using Node.js to handle server-side logic and communication with the database.</li>
+                <li>Participated in code reviews and testing to ensure high-quality code was delivered.</li>
+                <li>Implemented responsive design to ensure the application was accessible across devices.</li>
+                <li>Deployed the application to fly.io, vercel for public use.</li>
+              </ul>
+              <div className='flex justify-center flex-wrap p-2'> 
+                <div className='flex flex-col items-center p-5'>
+                  <a href="https://github.com/liensanchez/Project-Dogs-deploy">
+                    <img src={github} alt="" className='h-20 w-25'/>
+                  </a>
+                  <a href="https://github.com/liensanchez/Project-Dogs-deploy">Repository</a>
+                </div>
+                <div className='flex flex-col items-center p-5'>
+                  <a href="https://project-dogs-deploy.vercel.app/">
+                    <img src={dogsLogo} alt="" className='h-20 w-25'/>
+                  </a>
+                  <a href="https://project-dogs-deploy.vercel.app/">Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
       </>
       }
     </>

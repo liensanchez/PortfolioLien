@@ -22,12 +22,12 @@ function NavBar(isMobile) {
   return (
      <div className='fixed flex flex-row justify-between z-50 w-screen p-2 golden'>
 
-      <div >
+      <div className='flex flex-row items-center'>
         <img src={logo} alt="" />
       </div>
 
       {mobileCheck ? 
-          <div className='flex flex-row ' >
+          <div className='flex flex-row items-center' >
             {menu ? '' : <HiMenu onClick={OpenMenu}/>}
             {menu && <div className='flex flex-col items-center p-10' >
                 <a href='#aboutme' className='p-3' onClick={CloseMenu}>About Me</a>
@@ -41,10 +41,10 @@ function NavBar(isMobile) {
         :
 
           <div className='flex flex-row'>
-            <h3 className='item'>Projects</h3>
-            <h3 className='item'>Skills</h3>
-            <h3 className='item'>About Me</h3>
-            <h3 className='item'>Contact</h3>
+            <a href='#aboutme' className='p-3' onClick={CloseMenu}>About Me</a>
+            <a href='#projects' className='p-3' onClick={CloseMenu}>Projects</a>
+            <a href='#skills' className='p-3' onClick={CloseMenu}>Skills</a>
+            <a href='#contact' className='p-3' onClick={CloseMenu}>Contact</a> 
           </div>
       }
 

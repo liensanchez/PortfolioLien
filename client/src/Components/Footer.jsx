@@ -12,7 +12,7 @@ function Footer(isMobile) {
           <h2>Lien Sanchez</h2>
           <h2>2023 </h2>
         </div>
-    : <h2>PC</h2> }      
+    : <></> }      
     </>
 
   )

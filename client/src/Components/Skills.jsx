@@ -65,7 +65,50 @@ function Skills(isMobile) {
       </>
 
       :
-      <h2>Pc</h2>
+      <>
+      <div id='skills'></div>
+      <div className='flex flex-col items-center lightBlue p-2 m-5 rounded-lg w-6/12'>
+        <h3 className='font-mono text-2xl font-bold'>Skills</h3>
+        <div className='flex flex-wrap justify-center'>
+          <div className='flex flex-col items-center p-3'>
+            <img src={jsimg} alt="" className='h-20 w-20'/>
+            <p>Javascript</p>
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={reactimg} alt="" className='h-20 w-20'/>
+            <p>React</p>
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={reduximg} alt="" className='h-20 w-25'/>
+            <p>Redux</p>
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={sequelizeimg} alt="" className='h-20 w-20'/>
+            <p>Sequelize</p>
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={nodeimg} alt="" className='h-20 w-25'/>
+            <p>Express</p> 
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={passportimg} alt="" className='h-20 w-25'/>
+            <p>Passport</p>
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={nodemailerimg} alt="" className='h-20 w-20'/>
+            <p>Mailer</p>
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={socketimg} alt="" className='h-20 w-20'/>
+            <p>Socket.io</p>
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={mercadopagoimg} alt="" className='h-20 w-20'/>
+            <p>MercadoPago</p>
+          </div>
+        </div>  
+      </div>
+      </>
     }
     </>
 

@@ -44,36 +44,59 @@ function Presentation(isMobile) {
     <>
     {mobileCheck ? 
       <>     
-      <div className='flex flex-col mt-10'> 
-        <div className='flex flex-col items-center mt-4'>
-          <h1 className='font-mono text-2xl font-bold'>Lien Sanchez</h1>
-          <h2 className='font-mono text-2xl font-bold'>Full Stack Developer with:</h2>
-        </div> 
-        <div className='flex flex-col items-center'>
-          {technologies.slice(0, index + 1).map((technology, index) => (
-            <motion.div 
-            initial={{x: 0}}
-            animate={{x: 0,
-                      rotate:90,
-                      y:500,
-                      scale: 0}}
-            transition={{ ease: "easeOut",
-                          duration: 9,
-                          repeat: Infinity  }}
-            className='absolute'
-            key={index}>
-              {technology}
-            </motion.div>
-          ))}
-          <img src={Lien} alt="" className='z-10'/>
+        <div className='flex flex-col mt-10'> 
+          <div className='flex flex-col items-center mt-4'>
+            <h1 className='font-mono text-2xl font-bold'>Lien Sanchez</h1>
+            <h2 className='font-mono text-2xl font-bold'>Full Stack Developer with:</h2>
+          </div> 
+          <div className='flex flex-col items-center'>
+            {technologies.slice(0, index + 1).map((technology, index) => (
+              <motion.div 
+              initial={{x: 0}}
+              animate={{x: 0,
+                        rotate:90,
+                        y:500,
+                        scale: 0}}
+              transition={{ ease: "easeOut",
+                            duration: 9,
+                            repeat: Infinity  }}
+              className='absolute'
+              key={index}>
+                {technology}
+              </motion.div>
+            ))}
+            <img src={Lien} alt="" className='z-10'/>
+          </div>
         </div>
-      </div>
       </>
-      : <h2>PC</h2> }
-
-
+      : 
+      <>
+        <div className='flex flex-col mt-20 w-6/12'> 
+          <div className='flex flex-col items-center mt-4'>
+            <h1 className='font-mono text-2xl font-bold'>Lien Sanchez</h1>
+            <h2 className='font-mono text-2xl font-bold'>Full Stack Developer with:</h2>
+          </div> 
+          <div className='flex flex-col items-center'>
+            {technologies.slice(0, index + 1).map((technology, index) => (
+              <motion.div 
+              initial={{x: 0}}
+              animate={{x: 0,
+                        rotate:90,
+                        y:500,
+                        scale: 0}}
+              transition={{ ease: "easeOut",
+                            duration: 9,
+                            repeat: Infinity  }}
+              className='absolute'
+              key={index}>
+                {technology}
+              </motion.div>
+            ))}
+            <img src={Lien} alt="" className='z-10'/>
+          </div>
+        </div>
+      </>}
     </>
-
   )
 }
 

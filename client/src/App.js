@@ -28,15 +28,34 @@ function App() {
   }, [])
 
   return (
-    <div className='flex flex-col h-screen'>
-      <NavBar props={isMobile} />
-      <Presentation props={isMobile}/>
-      <AboutMe props={isMobile}/>
-      <Projects props={isMobile}/>
-      <Skills props={isMobile}/>
-      <Contact props={isMobile}/>
-      <Footer props={isMobile}/>  
-    </div>    
+
+    <>
+    {isMobile ?
+      <div className='flex flex-col'> 
+        <NavBar props={isMobile} />
+        <Presentation props={isMobile}/>
+        <AboutMe props={isMobile}/>
+        <Projects props={isMobile}/>
+        <Skills props={isMobile}/>
+        <Contact props={isMobile}/>
+        <Footer props={isMobile}/>  
+      </div>   
+         :
+      <div className='flex flex-wrap'> 
+        <NavBar props={isMobile} />
+        <Presentation props={isMobile}/>
+        <AboutMe props={isMobile}/>
+        <Projects props={isMobile}/>
+          <div className='flex justify-center ml-7'>
+            <Skills props={isMobile}/>
+            <Contact props={isMobile}/>
+          </div>
+        <Footer props={isMobile}/>  
+       </div>   
+         }
+
+    </>
+ 
   );
 }
 
