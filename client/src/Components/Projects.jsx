@@ -46,7 +46,7 @@ function Projects(isMobile) {
       {mobileCheck ? 
       <>
       <div id='projects' className=' my-5'></div>
-      <div className='flex flex-col items-center p-2 m-5 rounded-lg lightBlue'>
+      <div className='flex flex-col items-center p-2 m-5 rounded-lg blue'>
         <div className='flex flex-col items-center overflow-hidden'>
           <h3>Project Dogs</h3>
           <div className='overflow-hidden'>
