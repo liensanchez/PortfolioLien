@@ -27,7 +27,7 @@ function NavBar(isMobile) {
       </div>
 
       {mobileCheck ? 
-          <div className='flex flex-row' >
+          <div className='flex flex-row ' >
             {menu ? '' : <HiMenu onClick={OpenMenu}/>}
             {menu && <div className='flex flex-col items-center p-10' >
                 <a href='#aboutme' className='p-3' onClick={CloseMenu}>About Me</a>

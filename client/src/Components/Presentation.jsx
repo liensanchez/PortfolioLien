@@ -21,10 +21,10 @@ function Presentation(isMobile) {
 
   const technologies = [<img src={jsimg} className='h-10 w-10' alt=''/>,
                         <img src={reactimg} className='h-10 w-10' alt=''/>,
-                        <img src={reduximg} className='h-10 w-10' alt=''/>,
+                        <img src={reduximg} className='h-10 w-15' alt=''/>,
                         <img src={sequelizeimg} className='h-10 w-10' alt=''/>,
-                        <img src={nodeimg} className='h-10 w-10' alt=''/>,
-                        <img src={passportimg} className='h-10 w-10' alt=''/>,
+                        <img src={nodeimg} className='h-10 w-15' alt=''/>,
+                        <img src={passportimg} className='h-10 w-15' alt=''/>,
                         <img src={nodemailerimg} className='h-10 w-10' alt=''/>,
                         <img src={mercadopagoimg} className='h-10 w-10' alt=''/>,
                         <img src={socketimg} className='h-10 w-10' alt=''/>]
@@ -46,8 +46,8 @@ function Presentation(isMobile) {
       <>     
       <div className='flex flex-col mt-10'> 
         <div className='flex flex-col items-center mt-4'>
-          <h1>Lien Sanchez</h1>
-          <h2>Full Stack Developer con:</h2>
+          <h1 className='font-mono text-2xl font-bold'>Lien Sanchez</h1>
+          <h2 className='font-mono text-2xl font-bold'>Full Stack Developer with:</h2>
         </div> 
         <div className='flex flex-col items-center'>
           {technologies.slice(0, index + 1).map((technology, index) => (

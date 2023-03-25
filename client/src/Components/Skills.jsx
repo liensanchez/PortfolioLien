@@ -21,8 +21,8 @@ function Skills(isMobile) {
     {mobileCheck ? 
       <>
       <div id='skills'></div>
-      <div className='flex flex-col items-center blue p-2 m-5 rounded-lg'>
-        <h3>Skills</h3>
+      <div className='flex flex-col items-center lightBlue p-2 m-5 rounded-lg'>
+        <h3 className='font-mono text-2xl font-bold'>Skills</h3>
         <div className='flex flex-wrap justify-center'>
           <div className='flex flex-col items-center p-3'>
             <img src={jsimg} alt="" className='h-10 w-10'/>
@@ -33,7 +33,7 @@ function Skills(isMobile) {
             <p>React</p>
           </div>
           <div className='flex flex-col items-center p-3'>
-            <img src={reduximg} alt="" className='h-10 w-10'/>
+            <img src={reduximg} alt="" className='h-10 w-15'/>
             <p>Redux</p>
           </div>
           <div className='flex flex-col items-center p-3'>
@@ -41,11 +41,11 @@ function Skills(isMobile) {
             <p>Sequelize</p>
           </div>
           <div className='flex flex-col items-center p-3'>
-            <img src={nodeimg} alt="" className='h-10 w-10'/>
+            <img src={nodeimg} alt="" className='h-10 w-15'/>
             <p>Express</p> 
           </div>
           <div className='flex flex-col items-center p-3'>
-            <img src={passportimg} alt="" className='h-10 w-10'/>
+            <img src={passportimg} alt="" className='h-10 w-15'/>
             <p>Passport</p>
           </div>
           <div className='flex flex-col items-center p-3'>

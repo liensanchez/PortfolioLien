@@ -13,9 +13,9 @@ function Contact(isMobile) {
     {mobileCheck ? 
       <>
       <div id='contact'></div>
-      <div className='my-10 p-2 m-5 rounded-lg blue'>
+      <div className='my-10 p-2 m-5 rounded-lg lightBlue'>
         <div className='flex flex-col items-center p-2'>
-          <h2>Contact Me</h2>
+          <h2 className='font-mono text-2xl font-bold'>Contact Me</h2>
           <form action="" className='flex flex-col items-center'>
             <label htmlFor="">Name</label>
             <input type="text" placeholder='Name'/>
