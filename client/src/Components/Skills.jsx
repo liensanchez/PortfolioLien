@@ -8,6 +8,8 @@ import passportimg from '../assets/img/logos/passport.png'
 import nodemailerimg from '../assets/img/logos/nodemailer.png'
 import mercadopagoimg from '../assets/img/logos/mercadopago.png'
 import socketimg from '../assets/img/logos/socket.png'
+import pgimg from '../assets/img/logos/postgres.png'
+import sqlimg from '../assets/img/logos/sql.png'
 
 
 
@@ -45,6 +47,10 @@ function Skills(isMobile) {
             <p>Express</p> 
           </div>
           <div className='flex flex-col items-center p-3'>
+            <img src={sqlimg} alt="" className='h-10 w-10'/>
+            <p>SQL</p> 
+          </div>
+          <div className='flex flex-col items-center p-3'>
             <img src={passportimg} alt="" className='h-10 w-15'/>
             <p>Passport</p>
           </div>
@@ -59,6 +65,10 @@ function Skills(isMobile) {
           <div className='flex flex-col items-center p-3'>
             <img src={mercadopagoimg} alt="" className='h-10 w-10'/>
             <p>MercadoPago</p>
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={pgimg} alt="" className='h-10 w-10'/>
+            <p>Postgres</p>
           </div>
         </div>  
       </div>
@@ -87,6 +97,10 @@ function Skills(isMobile) {
             <p>Sequelize</p>
           </div>
           <div className='flex flex-col items-center p-3'>
+            <img src={sqlimg} alt="" className='h-20 w-20'/>
+            <p>SQL</p> 
+          </div>
+          <div className='flex flex-col items-center p-3'>
             <img src={nodeimg} alt="" className='h-20 w-25'/>
             <p>Express</p> 
           </div>
@@ -105,6 +119,10 @@ function Skills(isMobile) {
           <div className='flex flex-col items-center p-3'>
             <img src={mercadopagoimg} alt="" className='h-20 w-20'/>
             <p>MercadoPago</p>
+          </div>
+          <div className='flex flex-col items-center p-3'>
+            <img src={pgimg} alt="" className='h-20 w-20'/>
+            <p>Postgres</p>
           </div>
         </div>  
       </div>

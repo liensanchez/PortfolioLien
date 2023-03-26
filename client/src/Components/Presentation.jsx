@@ -11,6 +11,8 @@ import passportimg from '../assets/img/logos/passport.png'
 import nodemailerimg from '../assets/img/logos/nodemailer.png'
 import mercadopagoimg from '../assets/img/logos/mercadopago.png'
 import socketimg from '../assets/img/logos/socket.png'
+import pgimg from '../assets/img/logos/postgres.png'
+import sqlimg from '../assets/img/logos/sql.png'
 
 
 function Presentation(isMobile) {
@@ -27,7 +29,9 @@ function Presentation(isMobile) {
                         <img src={passportimg} className='h-10 w-15' alt=''/>,
                         <img src={nodemailerimg} className='h-10 w-10' alt=''/>,
                         <img src={mercadopagoimg} className='h-10 w-10' alt=''/>,
-                        <img src={socketimg} className='h-10 w-10' alt=''/>]
+                        <img src={socketimg} className='h-10 w-10' alt=''/>,
+                        <img src={pgimg} className='h-10 w-10' alt=''/>,
+                        <img src={sqlimg} className='h-10 w-10' alt=''/>]
 
   
 
@@ -58,7 +62,7 @@ function Presentation(isMobile) {
                         y:500,
                         scale: 0}}
               transition={{ ease: "easeOut",
-                            duration: 9,
+                            duration: 11,
                             repeat: Infinity  }}
               className='absolute'
               key={index}>
@@ -85,7 +89,7 @@ function Presentation(isMobile) {
                         y:500,
                         scale: 0}}
               transition={{ ease: "easeOut",
-                            duration: 9,
+                            duration: 11,
                             repeat: Infinity  }}
               className='absolute'
               key={index}>

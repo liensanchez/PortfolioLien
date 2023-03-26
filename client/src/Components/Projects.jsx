@@ -178,13 +178,13 @@ function Projects(isMobile) {
           <div className='w-5/12 flex flex-col items-center'>
             <h3 className='font-mono text-2xl font-bold py-2'>Project Dogs</h3>
             <div className='overflow-hidden'>
-              <img src={dogImages[currentVoyIndex]} alt="index" className='py-2'/>
+              <img src={dogImages[currentDogIndex]} alt="index" className='py-4'/>
                 <div className='flex justify-around'>
                   <button
-                    onClick={() => prevImgVoy()}
+                    onClick={() => prevImgDog()}
                     className='w-1/2 yellow'>Prev</button>
                   <button
-                    onClick={() => nextImgVoy() }
+                    onClick={() => nextImgDog() }
                     className='w-1/2 yellow'>Next</button>
                 </div>
             </div>
