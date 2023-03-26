@@ -79,7 +79,7 @@ function Skills(isMobile) {
       <div id='skills'></div>
       <div className='flex flex-col items-center lightBlue p-2 m-5 rounded-lg w-6/12'>
         <h3 className='font-mono text-2xl font-bold'>Skills</h3>
-        <div className='flex flex-wrap justify-center'>
+        <div className='flex flex-wrap justify-center my-5'>
           <div className='flex flex-col items-center p-3'>
             <img src={jsimg} alt="" className='h-20 w-20'/>
             <p>Javascript</p>

@@ -147,7 +147,7 @@ function Contact(isMobile) {
             id="email"
             type="email" 
             name="email"
-            className='golden rounded-lg'
+            className='golden rounded-lg '
           />
           <ValidationError 
             prefix="Email" 
