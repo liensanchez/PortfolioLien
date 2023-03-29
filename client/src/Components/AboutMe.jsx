@@ -1,6 +1,7 @@
 import React from 'react'
 import github from '../assets/img/logos/github.png'
 import linkedin from '../assets/img/logos/linkedin.png'
+import cv from '../assets/img/logos/cv.png'
 
 function AboutMe(isMobile) {
 
@@ -14,9 +15,30 @@ function AboutMe(isMobile) {
         <div className='flex flex-col items-center p-10 m-5 rounded-lg lightBlue'>
           <p className='font-mono text-2xl font-bold'>About Me!</p>
           <div className='pt-4'>
-            <p>I'm 23 years old, and I'm a very curious person who is always seeking new things to learn. I enjoy reading about history and challenging myself every day to grow a little bit more.</p> 
-            <p> I'm a very diligent and consistent individual, which has helped me develop skills and achieve accomplishments in various areas. I consider myself an outgoing and sociable person, accustomed to working in teams and collaborating with others to achieve common goals.</p>  
+            <p>I am a skilled full stack developer who is proactive, creative, and always eager to learn. I am currently looking for new job opportunities, particularly remote work that allows me to collaborate with people from around the world. I am proficient in English at the C2 level, which enables me to communicate effectively with clients and colleagues from different backgrounds. If you are looking for a talented and passionate developer, I am the right candidate for you.</p>
           </div>
+
+          <div className='flex justify-center flex-wrap p-2'>
+            <div className='flex flex-col items-center p-5'>
+              <a href="https://www.linkedin.com/in/liensanchez/">
+                <img src={linkedin} alt="" className='h-10 w-10'/>
+              </a>
+              <a href="https://www.linkedin.com/in/liensanchez/">Lien Sanchez</a>
+            </div>
+            <div className='flex flex-col items-center p-5'>
+              <a href="https://github.com/liensanchez">
+                <img src={github} alt="" className='h-10 w-15'/>
+              </a>
+              <a href="https://github.com/liensanchez">Lien!</a>
+            </div>
+            <div className='flex flex-col items-center p-5'>
+              <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">
+                <img src={cv} alt="" className='h-10 w-15'/>
+              </a>
+              <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">CV</a>
+            </div>
+          </div>
+
          </div>
         </>
       : 
@@ -25,8 +47,7 @@ function AboutMe(isMobile) {
         <div className='flex flex-col items-center p-10 mt-20 rounded-lg lightBlue w-5/12'>
           <p className='font-mono text-2xl font-bold'>About Me!</p>
           <div className='pt-4 flex flex-col items-center text-xl'>
-            <p className='tracking-wide'>I'm 23 years old, and I'm a very curious person who is always seeking new things to learn. I enjoy reading about history and challenging myself every day to grow a little bit more.</p> 
-            <p className='tracking-wide'> I'm a very diligent and consistent individual, which has helped me develop skills and achieve accomplishments in various areas. I consider myself an outgoing and sociable person, accustomed to working in teams and collaborating with others to achieve common goals.</p>  
+            <p>I am a skilled full stack developer who is proactive, creative, and always eager to learn. I am currently looking for new job opportunities, particularly remote work that allows me to collaborate with people from around the world. I am proficient in English at the C2 level, which enables me to communicate effectively with clients and colleagues from different backgrounds. If you are looking for a talented and passionate developer, I am the right candidate for you.</p>
           </div>
 
           <div className='flex flex-wrap p-5 '>
@@ -56,6 +77,12 @@ function AboutMe(isMobile) {
                 <img src={github} alt="" className='h-20 w-25'/>
               </a>
               <a href="https://github.com/liensanchez">Lien!</a>
+            </div>
+            <div className='flex flex-col items-center p-5'>
+              <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">
+                <img src={cv} alt="" className='h-20 w-25'/>
+              </a>
+              <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">CV</a>
             </div>
           </div>
         </div>
