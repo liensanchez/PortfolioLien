@@ -35,7 +35,7 @@ function AboutMe(isMobile) {
               <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">
                 <img src={cv} alt="" className='h-10 w-15'/>
               </a>
-              <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">CV</a>
+              <a href="https://drive.google.com/file/d/1z5b-540WkJnolm0cz6Km9wLUaVEsHiZ4/view">CV</a>
             </div>
           </div>
 
@@ -82,7 +82,7 @@ function AboutMe(isMobile) {
               <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">
                 <img src={cv} alt="" className='h-20 w-25'/>
               </a>
-              <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">CV</a>
+              <a href="https://drive.google.com/file/d/1z5b-540WkJnolm0cz6Km9wLUaVEsHiZ4/view">CV</a>
             </div>
           </div>
         </div>
