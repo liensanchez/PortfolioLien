@@ -32,7 +32,7 @@ function AboutMe(isMobile) {
               <a href="https://github.com/liensanchez">Lien!</a>
             </div>
             <div className='flex flex-col items-center p-5'>
-              <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1z5b-540WkJnolm0cz6Km9wLUaVEsHiZ4/view">
                 <img src={cv} alt="" className='h-10 w-15'/>
               </a>
               <a href="https://drive.google.com/file/d/1z5b-540WkJnolm0cz6Km9wLUaVEsHiZ4/view">CV</a>
@@ -79,7 +79,7 @@ function AboutMe(isMobile) {
               <a href="https://github.com/liensanchez">Lien!</a>
             </div>
             <div className='flex flex-col items-center p-5'>
-              <a href="https://drive.google.com/file/d/1RChwrF9SuBckKSyNpSNTvmlP13XqpFLF/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1z5b-540WkJnolm0cz6Km9wLUaVEsHiZ4/view">
                 <img src={cv} alt="" className='h-20 w-25'/>
               </a>
               <a href="https://drive.google.com/file/d/1z5b-540WkJnolm0cz6Km9wLUaVEsHiZ4/view">CV</a>
